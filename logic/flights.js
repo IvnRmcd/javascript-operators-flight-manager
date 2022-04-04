@@ -16,7 +16,7 @@ function Flights() {
     if (passengers % capacity === 0){
         numberOfFlights = passengers / capacity
     } else {
-        numberOfFlights =  passengers / capacity + 1
+        numberOfFlights =  Math.floor(passengers / capacity) + 1
     }
     return numberOfFlights
   }
