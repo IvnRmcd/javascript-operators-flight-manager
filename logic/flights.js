@@ -1,4 +1,5 @@
 function Flights() {
+
   const calculateNumberOfFlights = (numberOfPassengers,flightCapacity ) => {
     let numberOfFlights 
     let passengers = Number(numberOfPassengers)
@@ -20,7 +21,27 @@ function Flights() {
     }
     return numberOfFlights
   }
-  return {calculateNumberOfFlights}
+
+
+const checkAircraftRevision = (distanceLimit, distanceArray) => {
+   let totalDistance = distanceArray.reduce((a,b) => a + b)
+
+     if (totalDistance > distanceLimit){
+    throw new Error("Cannot fly")
+  }
+
+
+  if (totalDistance <= distanceLimit / 2){
+    return "The revision needs to be done within the next 3 months"
+  } else if (totalDistance <= (3 * distanceLimit / 4)){
+    return "The revision needs to be done within the next 2 months"
+  } else {
+    return  "The revision needs to be done within the next month"
+  }
+}
+
+
+  return {calculateNumberOfFlights, checkAircraftRevision}
 }
 
 module.exports = Flights();
