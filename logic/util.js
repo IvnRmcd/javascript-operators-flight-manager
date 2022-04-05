@@ -9,13 +9,7 @@ function Util() {
     return totalDistributedPassengers
   }
 
-
-
-  const calculateTotalNumberOfPassengers = (passengerArray) => {
-    return passengerArray.reduce((a,b) => a + b)
-  }
-
-  return {calculateTotalDistributedPassengers, calculateTotalNumberOfPassengers}
+  return {calculateTotalDistributedPassengers}
 }
 
 export default Util()
