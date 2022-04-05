@@ -66,4 +66,4 @@ const updateConfiguration = (configuration, seatsPerFlight) => {
 }
 
 
-module.exports = Passengers()
+export default Passengers()

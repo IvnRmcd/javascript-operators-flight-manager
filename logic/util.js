@@ -18,4 +18,4 @@ function Util() {
   return {calculateTotalDistributedPassengers, calculateTotalNumberOfPassengers}
 }
 
-module.exports = Util()
+export default Util()

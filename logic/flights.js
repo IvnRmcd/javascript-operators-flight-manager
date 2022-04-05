@@ -44,4 +44,4 @@ const checkAircraftRevision = (distanceLimit, distanceArray) => {
   return {calculateNumberOfFlights, checkAircraftRevision}
 }
 
-module.exports = Flights();
+export default Flights();
