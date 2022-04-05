@@ -1,7 +1,7 @@
 "use strict"
 
-import util from '../logic/util';
-import passengers from '../logic/passengers';
+var util = require('../logic/util');
+var passengers = require('../logic/passengers');
 
 function onCalculateNumberOfFlights() {
     let passengers = document.getElementById('passengers').value;
